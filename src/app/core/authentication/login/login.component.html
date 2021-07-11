@@ -1,0 +1,10 @@
+
+<form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+    <div class = "col-md-4 mb-3"> 
+        <label for="Email" class="col-md-8">Email: 
+            <input type = "text" formControlName = "Email" class = "form-control" placeholder="Email"></label></div>
+    <div class = "col-md-4 mb-2"> 
+        <label for="Password" class="col-md-8">Password:
+            <input type = "text" formControlName = "Password" class = "form-control" placeholder="Password"></label> </div>
+    <div class ="col-md-4 ml-3"> <button class= "btn btn-primary" type="submit" [disabled]= "!loginForm.valid">Login</button></div>
+</form>

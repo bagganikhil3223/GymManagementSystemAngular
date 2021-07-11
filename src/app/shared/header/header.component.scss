@@ -1,7 +1,16 @@
 .header {
-
+    background: Black;
+    height:100px;
+    width:100%;
 }
 
-.header h1 {
-    color : red;
+.header a {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left:20px;
+}
+
+.header a:hover{
+    color: rgb(250, 166, 10);
 }
